@@ -3,13 +3,17 @@
       package="gsb.med"
       android:versionCode="1"
       android:versionName="1.0">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application android:label="@string/app_name" >
         <activity android:name="MainActivity"
-                  android:label="@string/app_name">
+                  android:label="@string/app_nom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="LesMedActivity"
+                  android:label="@string/app_nom">
+    </activity>
     </application>
 </manifest> 
