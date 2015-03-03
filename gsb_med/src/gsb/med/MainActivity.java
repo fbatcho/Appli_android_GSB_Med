@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 import java.util.List;
-import modele.DAO;
+import Modele.DAO;
+
 
 public class MainActivity extends ListActivity {
 
@@ -31,7 +31,7 @@ public class MainActivity extends ListActivity {
         lesDeps = DAO.getlesDeps();
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, lesDeps);
         setListAdapter(adapter);
-
+     
     }
 
 }
