@@ -64,10 +64,9 @@ public class LesMedActivity extends ListActivity {
     }
 
     protected void onListItemClick(ListView l, View v, int position, long id) {
-
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:"+((Medecin) l.getItemAtPosition(position)).getTel()));
-        startActivity(callIntent);
+Intent inter=new Intent (this,TelmessActivity.class) ;
+           inter.putExtra("tel", (((Medecin) l.getItemAtPosition(position)).getTel()));
+           startActivity(inter);
     }
 
 }
